@@ -105,12 +105,14 @@ function SidebarComponent() {
           onClick={ROUTES.logout}
         />
 
-        <Button className="p-[1.4rem] bg-onPrimary text-white mx-auto mb-6 leading-[1.4rem]">
-          <img src={addIcon} alt="" />
-          <p className="uppercase font-light leading-[1.9rem] line-clamp-1 xl:line-clamp-none">
-            New project
-          </p>
-        </Button>
+        <div className={`absolute bottom-6 left-6`}>
+          <Button className="p-[1.4rem] px-12 bg-onPrimary text-white mx-auto mb-6 leading-[1.4rem]">
+            <img src={addIcon} alt="" />
+            <p className="uppercase font-light leading-[1.9rem] line-clamp-1 xl:line-clamp-none">
+              New project
+            </p>
+          </Button>
+        </div>
       </Menu>
     );
 }

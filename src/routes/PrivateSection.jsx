@@ -18,7 +18,7 @@ const useStyles = createUseStyles({
         }
     },
     contentBlock: {
-        marginTop: -20
+        marginTop: -32
     }
 });
 
