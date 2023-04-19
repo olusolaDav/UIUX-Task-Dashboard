@@ -27,11 +27,9 @@ const MenuItems = () => {
     </li>
   ));
   return (
-    <div className="my-12 px-3 space-y-10 divide-y divide-gray-50">
+    <div className="my-12 px-3 overflow-y-scroll space-y-10 divide-y divide-gray-50">
       <ul className=" list-none  space-y-8">{navLinks}</ul>
-      <ul className="list-none  space-y-8 pt-10">
-        {utility}
-      </ul>
+      <ul className="list-none  space-y-8 pt-10">{utility}</ul>
     </div>
   );
 };

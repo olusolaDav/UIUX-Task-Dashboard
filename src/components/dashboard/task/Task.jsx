@@ -14,7 +14,7 @@ const Task = () => {
         />
     ))
   return (
-    <main className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-16 px-9 py-6 sm:px-[4.4rem] sm:py-[4rem] bg-gray-50  max-w-[1920px] mx-auto">
+    <main className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2  md:gap-2 lg:gap-4 px-9 py-6 sm:px-[4.4rem] sm:py-[4rem] bg-gray-50  max-w-[1920px] mx-auto">
       {taskItem}
     </main>
   );

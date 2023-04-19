@@ -33,20 +33,24 @@ function SidebarComponent() {
           <LogoComponent />
         </div>
 
-        {/* The Sidebar Menu Items and Navigation links of the admin dashboard */}
-        <MenuItems />
+        {/* The Sidebar Menu Items and Navigation links of User dashboard */}
+        <div className="mb-4 overflow-y-scroll">
+          <MenuItems />
+        </div>
 
         {/* The sidebar call to action button "NEW PROJECT" */}
-       
-          <Link to="/new-project" className={`bottom-2 py-4 left-6 space-y-10`}>
-            <Button className="p-[1.4rem] px-12 bg-onPrimary text-white mx-auto mb-6 leading-[1.4rem]">
-              <img src={addIcon} alt="" />
-              <p className="uppercase font-light leading-[1.9rem] line-clamp-1 xl:line-clamp-none">
-                New project
-              </p>
-            </Button>
-          </Link>
-       
+
+        <Link
+          to="/new-project"
+          className={`absolute bottom-2 mt-4 py-4 left-6 space-y-10`}
+        >
+          <Button className="p-[1.4rem] px-12 bg-onPrimary text-white mx-auto mb-6 leading-[1.4rem]">
+            <img src={addIcon} alt="" />
+            <p className="uppercase font-light leading-[1.9rem] line-clamp-1 xl:line-clamp-none">
+              New project
+            </p>
+          </Button>
+        </Link>
       </Menu>
     );
 }

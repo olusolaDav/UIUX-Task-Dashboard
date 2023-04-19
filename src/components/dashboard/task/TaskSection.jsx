@@ -10,7 +10,10 @@ import plusDark from "../../../assets/icons/PlusaddIcon.svg";
 
 const TaskSection = ({ title, number, cardTitleProgress, cardImage }) => {
   const progressList = cardTitleProgress.map((data) => (
-    <section key={data.id} className={`space-y-6 sm:space-y-10 ${data.order}`}>
+    <section
+      key={data.id}
+      className={`space-y-6 sm:space-y-10 p-6 bg-white ${data.order}`}
+    >
       <CardTitle headTitle={data.headTitle} body={data.body} />
       <CardProgress
         image1={data.image1}
@@ -26,7 +29,7 @@ const TaskSection = ({ title, number, cardTitleProgress, cardImage }) => {
   ));
 
  const images = cardImage.map((img) => (
-   <figure key={img.id} className={`h-[16.8rem] ${img.color} ${img.order}`}>
+   <figure key={img.id} className={`h-[16.8rem] ${img.color} ${img.order} `}>
      <img
        src={img.image}
        alt=""
@@ -38,7 +41,7 @@ const TaskSection = ({ title, number, cardTitleProgress, cardImage }) => {
  return (
    <section className="space-y-10 ">
      <Label title={title} number={number} />
-     <Card className="space-y-6  overflow-y-scroll max-h-[55rem] flex flex-col rounded-xl">
+     <Card className="space-y-4 overflow-y-scroll max-h-[55rem] flex flex-col rounded-xl">
        {images}
        {progressList}
      </Card>

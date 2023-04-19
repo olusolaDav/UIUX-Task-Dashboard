@@ -3,7 +3,7 @@ import {  Routes, Route} from 'react-router-dom';
 import ROUTES from '../resources/routes';
 import LoadingComponent from '../components/loading/index';
 import Dashboard from '../components/dashboard/index'
-import { DemoPage } from './DemoPage';
+import { DemoPage } from '../components/demo/DemoPage';
 
 
 
