@@ -8,12 +8,26 @@ import plusDark from "../../../assets/icons/PlusaddIcon.svg";
 
 
 
-const TaskSection = ({ title, number, cardTitleProgress, cardImage }) => {
+const TaskSection = ({ title, number, cardTitleProgress }) => {
   const progressList = cardTitleProgress.map((data) => (
     <section
       key={data.id}
       className={`space-y-6 sm:space-y-10 p-6 bg-white ${data.order}`}
     >
+      {console.log(data.cardImage)}
+      {data.cardImage ? (
+        <figure
+          key={data.id}
+          className={`h-[16.8rem]  ${data.order} `}
+        >
+          <img
+            src={data.cardImage}
+            alt={``}
+            className="w-full h-full object-cover xl:object-contain"
+          />
+        </figure>
+      ) : null}
+
       <CardTitle headTitle={data.headTitle} body={data.body} />
       <CardProgress
         image1={data.image1}
@@ -28,21 +42,11 @@ const TaskSection = ({ title, number, cardTitleProgress, cardImage }) => {
     </section>
   ));
 
- const images = cardImage.map((img) => (
-   <figure key={img.id} className={`h-[16.8rem] ${img.color} ${img.order} `}>
-     <img
-       src={img.image}
-       alt=""
-       className="w-full h-full object-cover xl:object-contain"
-     />
-   </figure>
- ));
 
  return (
    <section className="space-y-10 ">
      <Label title={title} number={number} />
      <Card className="space-y-4 overflow-y-scroll max-h-[55rem] flex flex-col rounded-xl">
-       {images}
        {progressList}
      </Card>
      <Button className="w-full bg-labelColor py-[1.2rem] px-[2.4rem] border-dashed border-2">

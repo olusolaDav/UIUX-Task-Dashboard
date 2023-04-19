@@ -9,7 +9,6 @@ const IMAGES = [
 
 
 export const TASKS = [
-
   {
     id: 0,
     title: "To Do",
@@ -24,9 +23,11 @@ export const TASKS = [
         image3: IMAGES[2],
         className: "before:bg-gray-700",
         progress: 2,
-        claculatedWidth: 'before:w-2/12',
+        claculatedWidth: "before:w-2/12",
         comments: 7,
         links: 3,
+        cardImage: imagePink
+        
       },
       {
         id: 1,
@@ -37,22 +38,12 @@ export const TASKS = [
         image3: IMAGES[2],
         className: "before:bg-gray-700",
         progress: 5,
-        claculatedWidth: 'before:w-5/12',
+        claculatedWidth: "before:w-5/12",
         comments: 1,
         links: 8,
       },
     ],
-
-
-    cardImage: [
-      {
-        id: 0,
-        image: imagePink,
-        color: "bg-bgPink",
-      }     
-    ],
   },
-
 
   {
     id: 1,
@@ -68,23 +59,15 @@ export const TASKS = [
         image3: IMAGES[2],
         className: "before:bg-secondaryOrange",
         progress: 3,
-        claculatedWidth: 'before:w-3/12',
+        claculatedWidth: "before:w-3/12",
         comments: 6,
         links: 2,
+        cardImage: imageButter
+         
+        
       },
-      
-    ],
-
-
-    cardImage: [
-      {
-        id: 0,
-        image: imageButter,
-        color: "bg-bgButter",
-      }     
     ],
   },
-
 
   {
     id: 2,
@@ -100,9 +83,12 @@ export const TASKS = [
         image3: IMAGES[2],
         className: "before:bg-secondaryGreenLight",
         progress: 5,
-        claculatedWidth:'before:w-5/12',
+        claculatedWidth: "before:w-5/12",
         comments: 8,
         links: 5,
+        cardImage: imageGreen
+        
+        
         // order: '-order-1',
       },
       {
@@ -114,10 +100,10 @@ export const TASKS = [
         image3: IMAGES[2],
         className: "before:bg-secondaryGreenLight",
         progress: 4,
-        claculatedWidth: 'before:w-4/12',
+        claculatedWidth: "before:w-4/12",
         comments: 6,
         links: 1,
-        order: '-order-2',
+        order: "-order-2",
       },
       {
         id: 2,
@@ -128,22 +114,10 @@ export const TASKS = [
         image3: IMAGES[2],
         className: "before:bg-secondaryGreenLight",
         progress: 4,
-        claculatedWidth: 'before:w-4/12',
+        claculatedWidth: "before:w-4/12",
         comments: 6,
         links: 1,
       },
-    ],
-
-
-    cardImage: [
-      {
-        id: 0,
-        image: imageGreen,
-        color: "bg-bgGreen",
-      },
-    
-      
-       
     ],
   },
 ];
