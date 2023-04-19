@@ -18,7 +18,7 @@ const useStyles = createUseStyles({
         }
     },
     contentBlock: {
-        marginTop: 54
+        marginTop: -20
     }
 });
 
@@ -31,7 +31,7 @@ function PrivateSection() {
             <Row className={classes.container}>
                 <SidebarComponent />
                 <Column flexGrow={1} className={classes.mainBlock}>
-                    {/* <HeaderComponent /> */}
+                    {/* <HeaderComponent />  */}
                     <div className={classes.contentBlock}>
                         <PrivateRoutes />
                     </div>

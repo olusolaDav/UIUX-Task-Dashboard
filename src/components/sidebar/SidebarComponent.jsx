@@ -1,7 +1,9 @@
-import React from 'react';
 import { createUseStyles, useTheme } from 'react-jss';
 import { useNavigate } from "react-router-dom";
 import ROUTES from '../../resources/routes';
+import Button from "../shared/button/Button";
+import addIcon from "../../assets//icons/PlusIcon.svg";
+
 import {
     IconAgents,
     IconArticles,
@@ -18,14 +20,16 @@ import LogoComponent from './LogoComponent';
 import Menu from './MenuComponent';
 import MenuItem from './MenuItemComponent';
 
+
 const useStyles = createUseStyles({
-    separator: {
-       borderTop: ({ theme }) => `1px solid blue`,
-        marginTop: 16,
-        marginBottom: 16,
-        opacity: 0.06
-    }
+  separator: {
+    borderTop: ({ theme }) => `1px solid ${theme.color.lightGrayishBlue}`,
+    marginTop: 16,
+    marginBottom: 16,
+    opacity: 0.06,
+  },
 });
+
 
 function SidebarComponent() {
     const { push } = useNavigate();
@@ -54,9 +58,9 @@ function SidebarComponent() {
         />
         <MenuItem
           id={ROUTES.settings}
-          items={[ROUTES.overviewTwo, ROUTES.overviewThree]}
           title="Settings"
           icon={IconOverview}
+          onClick={() => onClick(ROUTES.settings)}
         />
 
         <MenuItem
@@ -100,6 +104,13 @@ function SidebarComponent() {
           icon={IconLogout}
           onClick={ROUTES.logout}
         />
+
+        <Button className="p-[1.4rem] bg-onPrimary text-white mx-auto mb-6 leading-[1.4rem]">
+          <img src={addIcon} alt="" />
+          <p className="uppercase font-light leading-[1.9rem] line-clamp-1 xl:line-clamp-none">
+            New project
+          </p>
+        </Button>
       </Menu>
     );
 }
