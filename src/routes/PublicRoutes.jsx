@@ -1,4 +1,3 @@
-import React from 'react';
 import {  Routes, Route } from "react-router-dom";
 import ROUTES from '../resources/routes';
 
@@ -9,8 +8,6 @@ function PublicRoutes() {
         <Route path={ROUTES.signup} element={<div>Sign up</div>}></Route>
         <Route path={ROUTES.forgotPassword}  element={ <div>forgot Password</div>}></Route>
 
-        {/* <Navigate to={ROUTES.login} replace={true} />
-        <Outlet /> */}
       </Routes>
     );
 }

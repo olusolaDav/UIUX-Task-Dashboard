@@ -42,7 +42,7 @@ const getMenuStyles = ({ theme }) => ({
     fill: theme.color.veryDarkGrayishBlue,
   },
   bmOverlay: {
-    background: "rgba(0, 0, 0, 0.3)",
+    background: "rgba(0, 0, 0, 0.8)",
     zIndex: 100,
   },
 });
