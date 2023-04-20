@@ -2,7 +2,13 @@
 
 
 ## PROJECT DESCRIPTION
-The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=). The dashboard is designed to display data in a clear and concise manner, allowing users to easily monitor and analyze task progress, and add new tasks to the list. The progress of the task list is divided into three categories: Todo, In Progress, and Completed.
+The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=). 
+
+[Figma Mockup](https://i.ibb.co/6bDps7J/Dashboard-1.png)
+
+[Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
+
+The dashboard is designed to display data in a clear and concise manner, allowing users to easily monitor and analyze task progress, and add new tasks to the list. The progress of the task list is divided into three categories: To-do, In Progress, and Completed.
 
 
 - Devloper: Akinbode Olusola David
@@ -25,7 +31,7 @@ The application relies on a variety of external resources, including dependencie
 * Prop-types - Runtime type checking for React props and similar objects
 * react-jss - JSS is an authoring tool for CSS which allows you to use JavaScript to describe styles in a declarative, conflict-free and reusable way.
 * react-burger-menu - An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations.
-* React-router-dom: For configuring routes, to loading and mutating data, to pending and optimistic UI.
+* React-router-dom: For configuring routes, for loading and mutating data, dynamic UI rendering.
 * react-collapsible-content - A react liberies for a long sections of information under a block, which enables users to expand and access its features.
 * simple-flexbox - A simple way to make responsive layouts using Flexbox in React.
 * Autoprefixer - PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use. .
@@ -47,11 +53,90 @@ yarn install (if you are using yarn) ||  npm run install (if you are using yarn)
 yarn run dev (if you installing with npm) || npm run dev (if you install with npm)
 
 
-## PROJECT STRUCTURE
+## PROJECT STRUCTURE (DIRECTORY TREE)
 -----------------------------------------
 > Take a look at the project structure.
 
-In the root directory we have:
+```
+├── node_modules (.gitignore)
+├── public
+|       └── VectoractivitiesIcon.svg
+├── src
+│   ├── assets
+|   |   ├── incons   
+│   │   |   ├── (...svg files and jsx files)
+|   |   ├── images   
+│   │   |   ├── (...png files)
+│   ├── components
+│   │   ├── collapsible
+│   │   │   ├── CollapsibleContent.jsx
+|   |   ├── dashboard   
+│   │   |   ├── header
+|   |   |   |   ├── Header.jsx
+│   │   |   ├── navBar
+|   |   |   |   ├── List.jsx
+|   |   |   |   ├── NavBar.jsx
+|   |   |   |   ├── NavList.jsx
+│   │   |   ├── task
+|   |   |   |   ├── TaskComponent.jsx
+|   |   |   |   ├── taskList.jsx
+|   |   |   |   ├── TaskSection.jsx
+│   │   |   ├── index.jsx
+│   │   ├── demo
+│   │   │   ├── DemoPage.jsx
+│   │   ├── loading
+│   │   │   ├── index.jsx
+│   │   │   ├── LoadingComponent.jsx
+│   │   ├── shared
+│   │   |   ├── button
+|   |   |   |   ├── Button.jsx
+│   │   |   ├── card
+|   |   |   |   ├── Card.jsx
+│   │   |   ├── cardProgress
+|   |   |   |   ├── cardProgress.jsx
+│   │   |   ├── cardTitle
+|   |   |   |   ├── CardTitle.jsx
+│   │   |   ├── label
+|   |   |   |   ├── Label.jsx
+│   │   |   ├── members
+|   |   |   |   ├── Members.jsx
+│   │   ├── sidebar
+│   │   |   ├── index.jsx
+│   │   |   ├── LogoComponent.jsx
+│   │   |   ├── MenuComponent.jsx
+│   │   |   ├── MenuItems.jsx
+│   │   |   ├── SidebarComponent.jsx
+│   │   |   ├── SidebarContext.jsx
+│   ├── hooks
+│   │   ├── useSidebar.jsx
+│   │   ├── useWindowSize.jsx
+│   ├── resources
+│   │   ├── navLinks.jsx
+│   │   ├── Profile.jsx
+│   │   ├── routes.js
+│   │   ├── theme.js
+│   │   ├── utilities.jsx
+│   ├── routes
+│   │   ├── index.jsx
+│   │   ├── PrivateRoutes.jsx
+│   │   ├── PrivateSection.jsx
+│   │   ├── PublicRoutes.js
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+├── .gitignore
+├── index.html
+├── jsconfig.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── vite.config.js
+├── yarn-error.log
+└── yarn.lock
+```
+
+#### In the root directory we have:
 
 -node_modules (.gitignore)
 - public directory
@@ -64,44 +149,84 @@ In the root directory we have:
 - vite.config.js file
 - yarn log file
 
-In the 'public' directory, we have:
+#### In the 'public' directory, we have:
 
 - VectoractivitiesIcon.svg (for the page title logo)
 
 
-In the 'src' directory we have :
+#### In the 'src' directory we have :
 
-- assests directory : Inside this directory I have where all images and icons used  through out the project it as two subfolders of image and icon, as the directory name implies they both store different file types of images(ong, jpeg etc) and icons(svg, ico, etc)
-- components directory: This is where all my components goes into , it as Six subfolders, which are name: 1. collapsible, 2. dashboard, 3. demo, 4. loading, 5. shared, 6. sidebar directory.
-- hook directory : This directrory consist of two 'jsx' files that render context used accross the project.
+- assests directory : Inside this directory we have all images and icons used  through out the project it as two subfolders of images and icons, as the directory name implies they both store different file types of images(png, jpeg etc) and icons(svg, ico, etc)
+
+- components directory: This is where all the components goes into , it as Six subdirectory, which are name: 
+1. collapsible: this contain a 'jsx' file that rendered the logic for the collapsable sidebar
+2. dashboard: this contain 3 subfolders and 1 index.jsx file that exports (rendered) the HOME PAGE components. 
+3. demo: this contain a 'jsx' file that rendered that dynamically rendered demo pages of the sidebar's navigation to the DOM.
+4. loading: This contain 2 'jsx' files that renders the loading gif to the DOM.
+5. shared: this contains 6 subfolders that holds all components that are used across the whole web application.
+6. sidebar: this directory contains 6 'jsx' files that renders the sidebar to the DOM.
+
+- hook directory : This directrory consist of two 'jsx' files that render context components used accross the project.
 - resources : This directory contains 3 'jsx' files and 2 'js' files that export static data used accross the web application
 - routes : This directory contains 3 'jsx' files that render the routes/pages components (both the homepage (dashboard) and the demo pages for the all navigation in the sidebar).
+
+#### In the 'src' directory we have :
 - app.jsx : This render the parent route component
 - index.css : contains the tailwind style config and other styles
-- main.jsx : this is the app component is been rendered
+- main.jsx : works as the entry point of the application. It uses ReactDOM.render to render App to the root 'id' in the index.html
+- index.html: the only html file in the project directory, it contain a 'root' div element in the body that is rendered to the DOM.  
 
 
-## Difficulties faced during the project
-
-- I first had challenges on how to structure the 'Task' component code and render the 3 coloumns dynacally.
-- I had challenges with the responsiveness, The 'main' component was not rendering full width on the "1440px' and '1920px', It was latter I discover, it was due to a conflict in the 'max-width' declaration. when I patiently inspected the code on broswer's developers tool.
-- Due to the fact I'm using tailwind css for the first time, I had to take my time to read the documentation and some video in oder to get familiar with the framework and and this slower my development stage because I have not mastered some of the classes yet.
-- Creating the resonsive sidebar also gave me a serious challenge I had to read documentation on liberies that can address.
-
-## What I learnt during the cost of the development
-
-- I learnt new tool such as (tailwindcss, react-jss, react-burger-menu, simple-flexbox, and react-collapsible-content)
-- The project made me to improve the way a developer structure code, write resueable and write clean code.
-- How to develope mobile first web application the will be resonsive in all screen.
-- Tailwindss classes 
-- Improve bug fixing
+## PROJECT OUTCOME (SCREENSHOT OF RENDERED SCREENS)
+-----------------------------------------
+> Take a look at output screenshot.
+[1280px Breakpoint](https://i.ibb.co/Y7kygjS/1280-size.png)
+[1440px Breakpoint](https://i.ibb.co/Mn87LX5/1440-size.png)
+[1920px Breakpoint](https://i.ibb.co/TwzrTkc/1920.png)
 
 
-## The following are feasures I added: 
+## FEATURES ADDED
+-----------------------------------------
+> Take a look at the screenshot of features added.
 
-- Responsiveness for all screens (mobile, table and Desktop(1280))
-- Collapsible sidebar component
-- Routes for the all the navigations on the sidebar and create a dynamic demo page for each of the routes.
+* Responsiveness for all screens (mobile, table and Desktop(1280px, 1440px & 1920px))
+[Mobile view iPhone 12pro](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
+[Tablet view ipad Air](https://i.ibb.co/zHxdbWs/ipad-Air-screen.png)
+[Mid-screen 760px](https://ibb.co/Gp8KmLH)
+
+
+* Collapsible sidebar component (The sidebar component will collapse from Mid-screen 1080px)
+The sidebar will be visible (expanded when user click on the 'burger-menu' button and will collapse when user click on the overlay component)
+[Collapsed sidebar on 1000px screen](https://i.ibb.co/S3KMMZC/1000-width-collapsesidebar.png)
+[Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
+[Collapsed Sidebar on iPhone 12pro screen](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
+[Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
+
+* Routes for the all the navigations on the sidebar and created a dynamic demo page for each of the routes.
+[Home page "dashboard routes"](https://i.ibb.co/XDFC6Jf/homepage.png)
+[Setting routes 'Demo page'](https://i.ibb.co/3BdQDmv/settings.png)
+[Users routes 'Demo page'](https://i.ibb.co/rx782Jw/userNew.png)
+[Activities routes 'Demo page'](https://i.ibb.co/FYPrwYV/activities.png)
+[Profille routes 'Demo page'](https://i.ibb.co/Zdb6kTg/profile.png)
+[Logout routes 'Demo page'](https://i.ibb.co/VHRCSQj/log-out.png)
+[ADD PROJECT routes 'Demo page'](https://i.ibb.co/Js5hnv6/add-project.png)
+
+
+
+
+## DIFFICULTIES DURING DEVELOPMENT
+
+-At first, I faced challenges in structuring the code for the 'Task' component and dynamically rendering the three columns.
+-I initially encountered challenges with responsiveness; the 'main' component was not rendering in full width on the '1440px' and '1920px' screen sizes. It was later discovered that this was due to a conflict in the 'max-width' with the help of built-in developer tool in the my browser.
+-As this was my first time using Tailwind CSS, I had to take my time to read through the documentation and watch some videos to become familiar with the framework. This slowed down my development stage, as I had not yet mastered some of the classes.
+-I also encountered a serious challenge while creating the responsive sidebar, and had to read through the documentation on libraries that could address the issue.
+
+## WHAT I LEARN'T IN THE COURSE OF THE DEVELOPMENT
+
+-I learned how to use several new tools, including Tailwind CSS, React-JSS, React-Burger-Menu, Simple-Flexbox, and React-Collapsible-Content.
+-The project helped me improve the way I structure code, write reusable code, and maintain clean code practices.
+-The project helped me learn how to develop a mobile-first web application that is responsive on all screen sizes.
+- Improve bug fixing expecially the 'styles' in developer tools
 
 
 ## NOTE
