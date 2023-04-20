@@ -25,7 +25,8 @@ export default {
       },
       colors: {
         primary: "#1D1042",
-        onPrimary: "#45269C",
+        onPrimary: "#703EFE",
+        bgGray: "#F9FAFB",
         secondaryGreenLight: "#8BC488",
         secondaryOrange: "#FF5F37",
         labelColor: "#F4F6F8",

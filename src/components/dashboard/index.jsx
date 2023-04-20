@@ -1,13 +1,15 @@
 import Header from "./header/Header";
 import NavBar from "./navBar/NavBar";
-import Task from "./task/Task";
+import Task from "./task/TaskComponent";
 function Dashboard() {
   return (
-      <main className="md:flex-2 w-full lg:space-y-0 space-y-2 overflow-y-scroll ">
+    <main className="md:flex-2 w-full  space-y-2 overflow-y-scroll ">
+      <div className="w-full bg-white">
         <Header />
-        <NavBar />
-        <Task />
-      </main>
+      </div>
+      <NavBar />
+      <Task />
+    </main>
   );
 }
 

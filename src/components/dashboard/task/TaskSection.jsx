@@ -1,4 +1,3 @@
-import React from "react";
 import Label from "../../shared/label/Label";
 import Card from "../../shared/card/Card";
 import CardTitle from "../../shared/cardTitle/CardTitle";
@@ -8,22 +7,22 @@ import plusDark from "../../../assets/icons/PlusaddIcon.svg";
 
 
 
+
 const TaskSection = ({ title, number, cardTitleProgress }) => {
   const progressList = cardTitleProgress.map((data) => (
     <section
       key={data.id}
       className={`space-y-6 sm:space-y-10 p-6 bg-white ${data.order}`}
     >
-      {console.log(data.cardImage)}
       {data.cardImage ? (
         <figure
           key={data.id}
-          className={`h-[16.8rem]  ${data.order} `}
+          className={`h-[16.8rem]  ${data.order} ${data.color}`}
         >
           <img
             src={data.cardImage}
             alt={``}
-            className="w-full h-full object-cover xl:object-contain"
+            className="w-full h-full object-cover lg:object-contain"
           />
         </figure>
       ) : null}
