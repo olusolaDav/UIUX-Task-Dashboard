@@ -1,11 +1,11 @@
 export default {
     // private (for authenticated admin)
-    dashboard: '/dashboard',
+    dashboard: '/',
     settings: '/settings',
     activities: '/activities',
     users: '/users',
     addeduser: '/addeduser',
-    afflilite: '/afflilite',
+    affiliate: '/affiliate',
     profile: '/profile',
     logout: '/logout',
 

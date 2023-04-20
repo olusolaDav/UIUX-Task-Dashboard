@@ -1,4 +1,3 @@
-import React from "react";
 import progressIcon from "../../../assets/icons/ListprogressIcon.svg";
 import linkIcon from "../../../assets/icons/LinkSimpleHorizontallinkIcon.svg";
 import commentIcon from "../../../assets/icons/ChatTeardropDots.svg";

@@ -14,6 +14,8 @@ function Routes() {
     }, [pathname]);
 
     const isUserLoggedIn = true;
+
+    //dynamic rendering of authenticated users and unauthenticated users
     return isUserLoggedIn ? <PrivateSection /> : <PublicRoutes />;
 }
 
