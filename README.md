@@ -185,7 +185,7 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 -----------------------------------------
 > Take a look at output screenshot.
 ![1280px Breakpoint](https://i.ibb.co/Y7kygjS/1280-size.png)
-*1280px Breakpoin*
+*1280px Breakpoint*
 
 ![1440px Breakpoint](https://i.ibb.co/Mn87LX5/1440-size.png)
 *1440px Breakpoint*
@@ -250,18 +250,19 @@ The sidebar will be visible (expanded when user click on the 'burger-menu' butto
 
 ## DIFFICULTIES DURING DEVELOPMENT
 
--At first, I faced challenges in structuring the code for the 'Task' component and dynamically rendering the three columns.
--I initially encountered challenges with responsiveness; the 'main' component was not rendering in full width on the '1440px' and '1920px' screen sizes. It was later discovered that this was due to a conflict in the 'max-width' with the help of built-in developer tool in the my browser.
--As this was my first time using Tailwind CSS, I had to take my time to read through the documentation and watch some videos to become familiar with the framework. This slowed down my development stage, as I had not yet mastered some of the classes.
--I also encountered a serious challenge while creating the responsive sidebar, and had to read through the documentation on libraries that could address the issue.
+* At first, I faced challenges in structuring the code for the 'Task' component and dynamically rendering the three columns.
+
+* I initially encountered challenges with responsiveness; the 'main' component was not rendering in full width on the '1440px' and '1920px' screen sizes. It was later discovered that this was due to a conflict in the 'max-width' with the help of built-in developer tool in the my browser.
+* As this was my first time using Tailwind CSS, I had to take my time to read through the documentation and watch some videos to become familiar with the framework. This slowed down my development stage, as I had not yet mastered some of the classes.
+* I also encountered a serious challenge while creating the responsive sidebar, and had to read through the documentation on libraries that could address the issue.
 
 ## WHAT I LEARN'T IN THE COURSE OF THE DEVELOPMENT
 
--I learned how to use several new tools, including Tailwind CSS, React-JSS, React-Burger-Menu, Simple-Flexbox, and React-Collapsible-Content.
--The project helped me improve the way I structure code, write reusable code, and maintain clean code practices.
--The project helped me learn how to develop a mobile-first web application that is responsive on all screen sizes.
-- Improve bug fixing expecially the 'styles' in developer tools
+* I learned how to use several new tools, including Tailwind CSS, React-JSS, React-Burger-Menu, Simple-Flexbox, and React-Collapsible-Content.
+* The project helped me improve the way I structure code, write reusable code, and maintain clean code practices.
+* The project helped me learn how to develop a mobile-first web application that is responsive on all screen sizes.
+* Improve bug fixing expecially the 'styles' in developer tools
 
 
-## NOTE
+### NOTE
 This is assessment by NUPAT TEAM to test prospective intern in React stack their skill and attention to detail summing up your ability to reproduce a pixel-perfect implementation of a design on figma and Also how to structure code.
