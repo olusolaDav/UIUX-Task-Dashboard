@@ -4,7 +4,7 @@
 ## PROJECT DESCRIPTION
 The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=). 
 
-![Figma Mockup](https://i.ibb.co/6bDps7J/Dashboard-1.png)
+![Figma Mockup](https://i.ibb.co/GCNj7hk/mockup.png)
 *screenshot of the Figma Mockup*
 
 ![Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
@@ -185,8 +185,13 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 -----------------------------------------
 > Take a look at output screenshot.
 ![1280px Breakpoint](https://i.ibb.co/Y7kygjS/1280-size.png)
+*1280px Breakpoin*
+
 ![1440px Breakpoint](https://i.ibb.co/Mn87LX5/1440-size.png)
+*1440px Breakpoint*
+
 ![1920px Breakpoint](https://i.ibb.co/TwzrTkc/1920.png)
+*1920px Breakpoint*
 
 
 ## FEATURES ADDED
