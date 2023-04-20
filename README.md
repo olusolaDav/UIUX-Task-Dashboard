@@ -5,7 +5,7 @@
 The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype below:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=) 
 
 ![Figma Mockup](https://i.ibb.co/P5B7CpK/Screenshot-2023-04-20-170024.png)
-*screenshot of the Figma Mockup*
+*screenshot of the `Figma Mocku`p*
 
 ![Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
 *screenshot of the expected breakpoints*
@@ -26,18 +26,18 @@ https://github.com/olusolaDav/UIUX-Task-Dashboard
 ## PROJECT DEPENDENCIES
 The application relies on a variety of external resources, including dependencies, frameworks, and tool for building and development;
 
-* Vite - Vite is a build tool similar to Webpack. It can be used for React, Preact, Svelte, Vue, Vanilla JS, and LitElements. Vite is 100 times faster than Webpack and bundles your code with Rollup.
-* Javascript - A programming language used for front-end development.
-* React.js - Frontend framework for building user interfaces for web and mobile applications.
-* tailwindcss - A utility-first CSS framework packed with classes like flex, pt-4, text-center and and some customize classes that can be composed to build any design, directly in UI markup.
-* Prop-types - Runtime type checking for React props and similar objects
-* react-jss - JSS is an authoring tool for CSS which allows you to use JavaScript to describe styles in a declarative, conflict-free and reusable way.
-* react-burger-menu - An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations.
-* React-router-dom: For configuring routes, for loading and mutating data, dynamic UI rendering.
-* react-collapsible-content - A react liberies for a long sections of information under a block, which enables users to expand and access its features.
-* simple-flexbox - A simple way to make responsive layouts using Flexbox in React.
-* Autoprefixer - PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use. .
-* Postcss - Transform CSS with the power of JavaScript. Auto-prefixing, future CSS syntaxes, modules, linting and more are possible with hundreds of PostCSS plugins.
+* `Vite` - Vite is a build tool similar to Webpack. It can be used for React, Preact, Svelte, Vue, Vanilla JS, and LitElements. Vite is 100 times faster than Webpack and bundles your code with Rollup.
+* `Javascript` - A programming language used for front-end development.
+* `React.js` - Frontend framework for building user interfaces for web and mobile applications.
+* `tailwindcss` - A utility-first CSS framework packed with classes like flex, pt-4, text-center and and some customize classes that can be composed to build any design, directly in UI markup.
+* `Prop-types` - Runtime type checking for React props and similar objects
+* `react-jss` - JSS is an authoring tool for CSS which allows you to use JavaScript to describe styles in a declarative, conflict-free and reusable way.
+* `react-burger-menu` - An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations.
+* `React-router-dom` - For configuring routes, for loading and mutating data, dynamic UI rendering.
+* `react-collapsible-content` - A react liberies for a long sections of information under a block, which enables users to expand and access its features.
+* `simple-flexbox` - A simple way to make responsive layouts using Flexbox in React.
+* `Autoprefixer` - PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use. .
+* `Postcss` - Transform CSS with the power of JavaScript. Auto-prefixing, future CSS syntaxes, modules, linting and more are possible with hundreds of PostCSS plugins.
 
 
 
@@ -151,7 +151,7 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 - vite.config.js file
 - yarn log file
 
-### In the /public directory, we have:**
+### In the /public directory, we have:
 
  - VectoractivitiesIcon.svg (for the page title logo)
 
@@ -165,21 +165,21 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
     This is where all the components in the application is stored. It has Six (6) subfolders, which are: 
     1. collapsible: this contain a 'jsx' file that rendered the logic for the collapsable sidebar
     2. dashboard: this contain 3 subfolders and 1 index.jsx file that exports (renders) the HOME PAGE. 
-    3. demo: this contain a 'jsx' file that dynamically renders demo pages of the sidebar's navigations to the DOM.
+    3. demo: this contain a `jsx` file that dynamically renders demo pages of the sidebar's navigations to the DOM.
     4. loading: This contain 2 'jsx' files that renders the loading gif to the DOM.
     5. shared: this contains 6 subfolders that holds all components that are used across the whole web application.
     6. sidebar: this directory contains 6 'jsx' files that renders the sidebar to the DOM.
 
 -   **/hooks**:
     every hook should is stored in this directory, and the names of the file inside start with the prefix "use":
-    i.e.: useSidebar, useWindowSize, and these are the two 'jsx' files that renders context components used accross the project.
+    i.e.: `useSidebar`, `useWindowSize`, and these are the two `jsx` files that renders context components used accross the project.
 
 -   **/resources**:
-    -   navLinks.jsx: a list of the sidebar navigations items and routes that will be used in the app
-    -   profile.jsx: an object that stores the 'Member' component images
-    -   routes.js: a list of the routes that will be used in the app
-    -   theme.js: an object with the theme structure, colors, typographies.
-    -   utilities.js: any utility function, for example "convertSlugToUrl", which is used in conjunction with "history.push" (react router) for redirects and links.
+    -   `navLinks.jsx`: a list of the sidebar navigations items and routes that will be used in the app
+    -   `profile.jsx`: an object that stores the 'Member' component images
+    -   `routes.js`: a list of the routes that will be used in the app
+    -   `theme.js`: an object with the theme structure, colors, typographies.
+    -   `utilities.js`: any utility function, for example `convertSlugToUrl`, which is used in conjunction with "history.push" (react router) for redirects and links.
 
 -   **/routes**:
     We have 2 types of routes, public and private.
@@ -197,12 +197,12 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
   
 
 ### root & config files:
-- app.jsx : This renders the parent route (component)
-- index.css : contains the tailwind style configuration and customisation
-- main.jsx : works as the entry point of the application. It uses ReactDOM.render to render 'App' component to the root 'id' in the index.html
-- index.html: the only html file in the project directory, it contain a 'root' div element in the body that is rendered to the DOM.  
-- package.json: This is the heart of any Node project. It records important metadata about a project which is required before publishing to NPM, and also defines functional attributes of a project that npm or yarn uses to install dependencies, run scripts, and identify the entry point to our package.
-- tailwind.config.json: To define any customizations of tailwindcss use in the project
+- `app.jsx` : This renders the parent route (component)
+- `index.css` : contains the tailwind style configuration and customisation
+- `main.jsx` : works as the entry point of the application. It uses ReactDOM.render to render 'App' component to the root 'id' in the index.html
+- `index.html`: the only html file in the project directory, it contain a 'root' div element in the body that is rendered to the DOM.  
+- `package.json`: This is the heart of any Node project. It records important metadata about a project which is required before publishing to NPM, and also defines functional attributes of a project that npm or yarn uses to install dependencies, run scripts, and identify the entry point to our package.
+- `tailwind.config.json`: To define any customizations of tailwindcss use in the project
 
 
 ## PROJECT OUTCOME (SCREENSHOT OF RENDERED SCREENS)
@@ -222,11 +222,10 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 -----------------------------------------
 > Take a look at the screenshot of features added.
 
-### 1. Responsiveness for all screens (mobile, table and Desktop(1280px, 1440px & 1920px))
-screen less than `768px` will be considered `mobile`.
+### 1. Responsiveness for all screens (`mobile`, `table` and `Desktop`(1280px, 1440px & 1920px))
+screen less than `1080px` will be considered `mobile`, `tablet` or `mid-screen`.
 The `Sidebar` will be isolated, on this component will be included: `Burger button`, `Desktop Sidebar` and `Mobile Sidebar`.
-`SidebarComponent` for `Desktop` is already explained. In this article we will see how to convert it in a responsive sidebar.
-In mobile screen (width <= 768px) `SidebarComponent` could have 2 different states: `collapsed` (default) or `expanded`.
+In mid-screen screen (width <= 1080px) `SidebarComponent` could have 2 different states: `collapsed` (default) or `expanded`.
 ![Mobile view iPhone 12pro](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
 *The Mobile view iPhone 12pro screenshot*
 
@@ -245,10 +244,10 @@ In this state the whole sidebar will be hidden, `main` component will fill the w
 We need a button to `expand` the `Sidebar` and we will use a `BurgerIcon` for that (to copy the burger icon [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/assets/icons/icon-burger.jsx)). That button will be in a absolute position, over the `header`:
 
 ![Collapsed sidebar on 1000px screen](https://i.ibb.co/S3KMMZC/1000-width-collapsesidebar.png)
-*Collapsed sidebar on 1000px screen*
+*Collapsed sidebar on `1000px` screen*
 
 ![Collapsed Sidebar on iPhone 12pro screen](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
-*Collapsed Sidebar on iPhone 12pro screen*
+*Collapsed Sidebar on `iPhone 12pro` screen*
 
 
 
@@ -258,10 +257,10 @@ We need a button to `expand` the `Sidebar` and we will use a `BurgerIcon` for th
 In this state we will show the `Sidebar` and an `outsideLayer` that will fill the rest of the screen with a semitransparent background, and if you click on it, the `Sidebar` will be closed:
 
 ![Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
-*Expanded sidebar on 1000px screen*
+*Expanded sidebar on `1000px` screen*
 
 ![Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
-*Expanded Sidebar on iPhone 12pro screen*
+*Expanded Sidebar on `iPhone 12pr` screen*
 
 
 
@@ -289,24 +288,27 @@ In this state we will show the `Sidebar` and an `outsideLayer` that will fill th
 
 
 ### 3. Created loading spinner animation component
-With the help of lazy loading using react.lazy and React.Suspense I created animated loading spinner that will be render when the page is loading. The component is imported using the dynamic import() syntax and assigned to the loader property in the options object,  (to view the code base [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/assets/icons/icon-burger.jsx)).
+With the help of lazy loading using `react.lazy` and `React.Suspense` I created animated loading spinner that will be render when the page is loading. The component is imported using the dynamic import() syntax and assigned to the loader property in the options object,  (to view the code base [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/routes/PrivateRoutes.jsx)). The logic and styling of the loading component is written in the `LoadingComponent.jsx`, while `/src/components/loading/index.jsx` export the component. (to view the code base [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/components/loading/LoadingComponent.jsx)).
+
+![Loading component'](https://i.ibb.co/R4PFtH9/Screenshot-165.png)
+*Screenshot of the loading state*
 
 
 ## DIFFICULTIES DURING THE COURSE OF DEVELOPMENT
 
-* I first faced a challenge in structuring the code for the 'Task' component and dynamically rendering the three columns.
+* I first faced a challenge in structuring the code for the `Task` component and dynamically rendering the three columns.
 
-* I initially encountered challenges with responsiveness; the 'main' component was not rendering in full-width on the '1440px' and '1920px' screen sizes. It was later discovered that this was due to a conflict in the 'max-width' with the help of built-in developer tool in the my browser.
-* As this was my first time using Tailwind CSS, I had to take my time to read through the documentation and watch some videos to become familiar with the framework. This slowed down my development stage, as I had not yet mastered some of the classes.
+* I initially encountered challenges with responsiveness; the `main` component was not rendering in full-width on the `1440px` and `1920px` screen sizes. It was later discovered that this was due to a conflict in the `max-width` with the help of built-in developer tool in the my browser.
+* As this was my first time using `Tailwind CSS`, I had to take my time to read through the documentation and watch some videos to become familiar with the framework. This slowed down my development stage, as I had not yet mastered some of the classes.
 * I also encountered a serious challenge while creating the responsive sidebar, and had to read through the documentation on libraries that could address the issue.
 
 ## WHAT I LEARNT IN THE COURSE OF THE DEVELOPMENT
 
-* I learned how to use some new tools, including Tailwind CSS, React-JSS, React-Burger-Menu, Simple-Flexbox, and React-Collapsible-Content.
+* I learned how to use some new tools, including `Tailwind CSS`, `React-JSS`, `React-Burger-Menu`, `Simple-Flexbox`, and `React-Collapsible-Content`.
 * The project helped me improve the way I structure code, write reusable code, and maintain clean code practices.
 * The project helped me learn how to develop a mobile-first web application that is responsive on all screen sizes.
-* Improve bug fixing expecially the 'styles' in developer tools
+* Improve bug fixing expecially the `styles` in developer tools
 
 
 ### NOTE
-This is assessment by NUPAT TEAM to test prospective intern in React stack their skill and attention to detail summing up your ability to reproduce a pixel-perfect implementation of a design on figma and Also how to structure code.
+This is assessment by `NUPAT TEAM` to test prospective intern in React stack their skill and attention to detail summing up your ability to reproduce a `pixel-perfect` implementation of a design on figma and Also how to structure code.
