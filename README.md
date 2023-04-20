@@ -2,7 +2,7 @@
 
 
 ## PROJECT DESCRIPTION
-The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=) 
+The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype below:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=) 
 
 ![Figma Mockup](https://i.ibb.co/P5B7CpK/Screenshot-2023-04-20-170024.png)
 *screenshot of the Figma Mockup*
@@ -14,7 +14,7 @@ The dashboard is designed to display data in a clear and concise manner, allowin
 
 
 - Devloper: Akinbode Olusola David
-- start-date: 15th of April, 2023
+- Start date: 15th of April, 2023
 - Finish-date: 20th of April, 2023
 
 ## PROJECT LINK
@@ -52,7 +52,7 @@ This project was created using vite (React.js)
 yarn install (if you are using yarn) ||  npm run install (if you are using yarn)
 
 * Run the development server:
-yarn run dev (if you installing with npm) || npm run dev (if you install with npm)
+yarn run dev (if you installing with yarn) || npm run dev (if you install with npm)
 
 
 ## PROJECT STRUCTURE (DIRECTORY TREE)
@@ -140,9 +140,9 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 
 ### In the root directory we have:
 
--node_modules (.gitignore)
-- public directory
-- src directory
+- /node_modules (.gitignore)
+- /public directory
+- /src directory
 - index.html file
 - jsconfig.json file
 - postcss.config.js file
@@ -158,32 +158,32 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 
 ### In the 'src' directory we have :
 
-- assests directory : Inside this directory we have all images and icons used  through out the project it as two subfolders of images and icons, as the directory name implies they both store different file types of images(png, jpeg etc) and icons(svg, ico, etc)
+- assests directory : Inside this directory we have all images and icons used  through out the project. It has two subfolders of images and icons, as the directory name implies, they both store different file types of images(png, jpeg etc) and icons(svg, ico, etc)
 
-- components directory: This is where all the components goes into , it as Six subdirectory, which are name: 
+- components directory: This is where all the components in the application is stored. It has Six (6) subfolders, which are: 
 1. collapsible: this contain a 'jsx' file that rendered the logic for the collapsable sidebar
-2. dashboard: this contain 3 subfolders and 1 index.jsx file that exports (rendered) the HOME PAGE components. 
-3. demo: this contain a 'jsx' file that rendered that dynamically rendered demo pages of the sidebar's navigation to the DOM.
+2. dashboard: this contain 3 subfolders and 1 index.jsx file that exports (renders) the HOME PAGE. 
+3. demo: this contain a 'jsx' file that dynamically renders demo pages of the sidebar's navigations to the DOM.
 4. loading: This contain 2 'jsx' files that renders the loading gif to the DOM.
 5. shared: this contains 6 subfolders that holds all components that are used across the whole web application.
 6. sidebar: this directory contains 6 'jsx' files that renders the sidebar to the DOM.
 
-- hook directory : This directrory consist of two 'jsx' files that render context components used accross the project.
+- hook directory : This directrory consist of two 'jsx' files that renders context components used accross the project.
 - resources : This directory contains 3 'jsx' files and 2 'js' files that export static data used accross the web application
-- routes : This directory contains 3 'jsx' files that render the routes/pages components (both the homepage (dashboard) and the demo pages for the all navigation in the sidebar).
+- routes : This directory contains 4 'jsx' files that state the conditions (dynamic rendering) to render the routes/pages components (both the homepage (dashboard) and the demo pages for the all navigation in the sidebar) to the DOM.
 
-### root & config files  , postcss.config.json etc) :
-- app.jsx : This render the parent route component
-- index.css : contains the tailwind style config and other styles
-- main.jsx : works as the entry point of the application. It uses ReactDOM.render to render App to the root 'id' in the index.html
+### root & config files:
+- app.jsx : This renders the parent route (component)
+- index.css : contains the tailwind style configuration and customisation
+- main.jsx : works as the entry point of the application. It uses ReactDOM.render to render 'App' component to the root 'id' in the index.html
 - index.html: the only html file in the project directory, it contain a 'root' div element in the body that is rendered to the DOM.  
-- package.json: This is the heart of any Node project. It records important metadata about a project which is required before publishing to NPM, and also defines functional attributes of a project that npm uses to install dependencies, run scripts, and identify the entry point to our package.
+- package.json: This is the heart of any Node project. It records important metadata about a project which is required before publishing to NPM, and also defines functional attributes of a project that npm or yarn uses to install dependencies, run scripts, and identify the entry point to our package.
 - tailwind.config.json: To define any customizations of tailwindcss use in the project
 
 
 ## PROJECT OUTCOME (SCREENSHOT OF RENDERED SCREENS)
 -----------------------------------------
-> Take a look at output screenshot.
+> Take a look at project output (screenshot of the expected screens after the development).
 ![1280px Breakpoint](https://i.ibb.co/Y7kygjS/1280-size.png)
 *1280px Breakpoint*
 
@@ -210,7 +210,8 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 
 
 ### Collapsible sidebar component (The sidebar component will collapse from Mid-screen 1080px)
-The sidebar will be visible (expanded when user click on the 'burger-menu' button and will collapse when user click on the overlay component)
+The sidebar will be visible (expanded when user click on the 'burger-menu' button and will collapse when users click on the overlay component)
+
 ![Collapsed sidebar on 1000px screen](https://i.ibb.co/S3KMMZC/1000-width-collapsesidebar.png)
 *Collapsed sidebar on 1000px screen*
 
@@ -223,7 +224,7 @@ The sidebar will be visible (expanded when user click on the 'burger-menu' butto
 ![Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
 *Expanded Sidebar on iPhone 12pro screen*
 
-### Routes for the all the navigations on the sidebar and created a dynamic demo page for each of the routes.
+### Created Routes for the all the navigations on the sidebar and dynamic demo page for each of the routes.
 ![Home page "dashboard routes"](https://i.ibb.co/XDFC6Jf/homepage.png)
 *Home page "dashboard routes"*
 
@@ -248,17 +249,17 @@ The sidebar will be visible (expanded when user click on the 'burger-menu' butto
 
 
 
-## DIFFICULTIES DURING DEVELOPMENT
+## DIFFICULTIES DURING THE COURSE OF DEVELOPMENT
 
-* At first, I faced challenges in structuring the code for the 'Task' component and dynamically rendering the three columns.
+* I first faced a challenge in structuring the code for the 'Task' component and dynamically rendering the three columns.
 
-* I initially encountered challenges with responsiveness; the 'main' component was not rendering in full width on the '1440px' and '1920px' screen sizes. It was later discovered that this was due to a conflict in the 'max-width' with the help of built-in developer tool in the my browser.
+* I initially encountered challenges with responsiveness; the 'main' component was not rendering in full-width on the '1440px' and '1920px' screen sizes. It was later discovered that this was due to a conflict in the 'max-width' with the help of built-in developer tool in the my browser.
 * As this was my first time using Tailwind CSS, I had to take my time to read through the documentation and watch some videos to become familiar with the framework. This slowed down my development stage, as I had not yet mastered some of the classes.
 * I also encountered a serious challenge while creating the responsive sidebar, and had to read through the documentation on libraries that could address the issue.
 
 ## WHAT I LEARNT IN THE COURSE OF THE DEVELOPMENT
 
-* I learned how to use several new tools, including Tailwind CSS, React-JSS, React-Burger-Menu, Simple-Flexbox, and React-Collapsible-Content.
+* I learned how to use some new tools, including Tailwind CSS, React-JSS, React-Burger-Menu, Simple-Flexbox, and React-Collapsible-Content.
 * The project helped me improve the way I structure code, write reusable code, and maintain clean code practices.
 * The project helped me learn how to develop a mobile-first web application that is responsive on all screen sizes.
 * Improve bug fixing expecially the 'styles' in developer tools
