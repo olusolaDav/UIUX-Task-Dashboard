@@ -60,70 +60,70 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 > Take a look at the project structure.
 
 ```
-├── node_modules (.gitignore)
-├── public
+├── /node_modules (.gitignore)
+├── /public
 |       └── VectoractivitiesIcon.svg
-├── src
-│   ├── assets
-|   |   ├── incons   
+├── /src
+│   ├── /assets
+|   |   ├── /incons   
 │   │   |   ├── (...svg files and jsx files)
-|   |   ├── images   
+|   |   ├── /images   
 │   │   |   ├── (...png files)
-│   ├── components
-│   │   ├── collapsible
+│   ├── /components
+│   │   ├── /collapsible
 │   │   │   ├── CollapsibleContent.jsx
-|   |   ├── dashboard   
-│   │   |   ├── header
+|   |   ├── /dashboard   
+│   │   |   ├── /header
 |   |   |   |   ├── Header.jsx
-│   │   |   ├── navBar
+│   │   |   ├── /navBar
 |   |   |   |   ├── List.jsx
 |   |   |   |   ├── NavBar.jsx
 |   |   |   |   ├── NavList.jsx
-│   │   |   ├── task
+│   │   |   ├── /task
 |   |   |   |   ├── TaskComponent.jsx
 |   |   |   |   ├── taskList.jsx
 |   |   |   |   ├── TaskSection.jsx
 │   │   |   ├── index.jsx
-│   │   ├── demo
+│   │   ├── /demo
 │   │   │   ├── DemoPage.jsx
-│   │   ├── loading
+│   │   ├── /loading
 │   │   │   ├── index.jsx
 │   │   │   ├── LoadingComponent.jsx
-│   │   ├── shared
-│   │   |   ├── button
+│   │   ├── /shared
+│   │   |   ├── /button
 |   |   |   |   ├── Button.jsx
-│   │   |   ├── card
+│   │   |   ├── /card
 |   |   |   |   ├── Card.jsx
-│   │   |   ├── cardProgress
+│   │   |   ├── /cardProgress
 |   |   |   |   ├── cardProgress.jsx
-│   │   |   ├── cardTitle
+│   │   |   ├── /cardTitle
 |   |   |   |   ├── CardTitle.jsx
-│   │   |   ├── label
+│   │   |   ├── /label
 |   |   |   |   ├── Label.jsx
-│   │   |   ├── members
+│   │   |   ├── /members
 |   |   |   |   ├── Members.jsx
-│   │   ├── sidebar
+│   │   ├── /sidebar
 │   │   |   ├── index.jsx
 │   │   |   ├── LogoComponent.jsx
 │   │   |   ├── MenuComponent.jsx
 │   │   |   ├── MenuItems.jsx
 │   │   |   ├── SidebarComponent.jsx
 │   │   |   ├── SidebarContext.jsx
-│   ├── hooks
+│   ├── /hooks
 │   │   ├── useSidebar.jsx
 │   │   ├── useWindowSize.jsx
-│   ├── resources
+│   ├── /resources
 │   │   ├── navLinks.jsx
 │   │   ├── Profile.jsx
 │   │   ├── routes.js
 │   │   ├── theme.js
 │   │   ├── utilities.jsx
-│   ├── routes
+│   ├── /routes
 │   │   ├── index.jsx
 │   │   ├── PrivateRoutes.jsx
 │   │   ├── PrivateSection.jsx
 │   │   ├── PublicRoutes.js
-│   ├── App.jsx
+│   ├── /App.jsx
 │   ├── index.css
 │   ├── main.jsx
 ├── .gitignore
@@ -138,7 +138,7 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 └── yarn.lock
 ```
 
-### In the root directory we have:
+### In the root directory we have: /
 
 - /node_modules (.gitignore)
 - /public directory
@@ -151,26 +151,50 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 - vite.config.js file
 - yarn log file
 
-### In the 'public' directory, we have:
+### In the /public directory, we have:**
 
-- VectoractivitiesIcon.svg (for the page title logo)
+ - VectoractivitiesIcon.svg (for the page title logo)
 
+### base folder: /src:
 
-### In the 'src' directory we have :
+-   **/assets**:
+    /icons: SVGs icons
+    other assets (i.e. images)
 
-- assests directory : Inside this directory we have all images and icons used  through out the project. It has two subfolders of images and icons, as the directory name implies, they both store different file types of images(png, jpeg etc) and icons(svg, ico, etc)
+-   **/components**: 
+    This is where all the components in the application is stored. It has Six (6) subfolders, which are: 
+    1. collapsible: this contain a 'jsx' file that rendered the logic for the collapsable sidebar
+    2. dashboard: this contain 3 subfolders and 1 index.jsx file that exports (renders) the HOME PAGE. 
+    3. demo: this contain a 'jsx' file that dynamically renders demo pages of the sidebar's navigations to the DOM.
+    4. loading: This contain 2 'jsx' files that renders the loading gif to the DOM.
+    5. shared: this contains 6 subfolders that holds all components that are used across the whole web application.
+    6. sidebar: this directory contains 6 'jsx' files that renders the sidebar to the DOM.
 
-- components directory: This is where all the components in the application is stored. It has Six (6) subfolders, which are: 
-1. collapsible: this contain a 'jsx' file that rendered the logic for the collapsable sidebar
-2. dashboard: this contain 3 subfolders and 1 index.jsx file that exports (renders) the HOME PAGE. 
-3. demo: this contain a 'jsx' file that dynamically renders demo pages of the sidebar's navigations to the DOM.
-4. loading: This contain 2 'jsx' files that renders the loading gif to the DOM.
-5. shared: this contains 6 subfolders that holds all components that are used across the whole web application.
-6. sidebar: this directory contains 6 'jsx' files that renders the sidebar to the DOM.
+-   **/hooks**:
+    every hook should is stored in this directory, and the names of the file inside start with the prefix "use":
+    i.e.: useSidebar, useWindowSize, and these are the two 'jsx' files that renders context components used accross the project.
 
-- hook directory : This directrory consist of two 'jsx' files that renders context components used accross the project.
-- resources : This directory contains 3 'jsx' files and 2 'js' files that export static data used accross the web application
-- routes : This directory contains 4 'jsx' files that state the conditions (dynamic rendering) to render the routes/pages components (both the homepage (dashboard) and the demo pages for the all navigation in the sidebar) to the DOM.
+-   **/resources**:
+    -   navLinks.jsx: a list of the sidebar navigations items and routes that will be used in the app
+    -   profile.jsx: an object that stores the 'Member' component images
+    -   routes.js: a list of the routes that will be used in the app
+    -   theme.js: an object with the theme structure, colors, typographies.
+    -   utilities.js: any utility function, for example "convertSlugToUrl", which is used in conjunction with "history.push" (react router) for redirects and links.
+
+-   **/routes**:
+    We have 2 types of routes, public and private.
+    public: are all those that do not require the user to be logged into the app, such as Login, Signup, etc.
+    private: to access these routes the user must be logged in (this app is set to authenticated user by default)
+    Each main section of the application has its own route:
+    -   dashboard (the homepage)
+    -   settings
+    -   activities
+    -   users
+    -   added user
+    -   affiliate
+    -   profile
+    -   logout
+  
 
 ### root & config files:
 - app.jsx : This renders the parent route (component)
@@ -198,7 +222,11 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 -----------------------------------------
 > Take a look at the screenshot of features added.
 
-### Responsiveness for all screens (mobile, table and Desktop(1280px, 1440px & 1920px))
+### 1. Responsiveness for all screens (mobile, table and Desktop(1280px, 1440px & 1920px))
+screen less than `768px` will be considered `mobile`.
+The `Sidebar` will be isolated, on this component will be included: `Burger button`, `Desktop Sidebar` and `Mobile Sidebar`.
+`SidebarComponent` for `Desktop` is already explained. In this article we will see how to convert it in a responsive sidebar.
+In mobile screen (width <= 768px) `SidebarComponent` could have 2 different states: `collapsed` (default) or `expanded`.
 ![Mobile view iPhone 12pro](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
 *The Mobile view iPhone 12pro screenshot*
 
@@ -209,22 +237,35 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 *Mid-screen 760px screenshot*
 
 
-### Collapsible sidebar component (The sidebar component will collapse from Mid-screen 1080px)
+### 2. Collapsible sidebar component (The sidebar component will collapse from Mid-screen 1080px)
 The sidebar will be visible (expanded when user click on the 'burger-menu' button and will collapse when users click on the overlay component)
+
+- **Collapsed:**
+In this state the whole sidebar will be hidden, `main` component will fill the whole width of the screen.
+We need a button to `expand` the `Sidebar` and we will use a `BurgerIcon` for that (to copy the burger icon [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/assets/icons/icon-burger.jsx)). That button will be in a absolute position, over the `header`:
 
 ![Collapsed sidebar on 1000px screen](https://i.ibb.co/S3KMMZC/1000-width-collapsesidebar.png)
 *Collapsed sidebar on 1000px screen*
 
-![Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
-*Expanded sidebar on 1000px screen*
-
 ![Collapsed Sidebar on iPhone 12pro screen](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
 *Collapsed Sidebar on iPhone 12pro screen*
+
+
+
+
+
+- **Expanded:**
+In this state we will show the `Sidebar` and an `outsideLayer` that will fill the rest of the screen with a semitransparent background, and if you click on it, the `Sidebar` will be closed:
+
+![Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
+*Expanded sidebar on 1000px screen*
 
 ![Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
 *Expanded Sidebar on iPhone 12pro screen*
 
-### Created Routes for the all the navigations on the sidebar and dynamic demo page for each of the routes.
+
+
+### 3. Created Routes for the all the navigations on the sidebar and dynamic demo page for each of the routes.
 ![Home page "dashboard routes"](https://i.ibb.co/XDFC6Jf/homepage.png)
 *Home page "dashboard routes"*
 
@@ -247,6 +288,8 @@ The sidebar will be visible (expanded when user click on the 'burger-menu' butto
 *ADD PROJECT routes 'Demo page'*
 
 
+### 3. Created loading spinner animation component
+With the help of lazy loading using react.lazy and React.Suspense I created animated loading spinner that will be render when the page is loading. The component is imported using the dynamic import() syntax and assigned to the loader property in the options object,  (to view the code base [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/assets/icons/icon-burger.jsx)).
 
 
 ## DIFFICULTIES DURING THE COURSE OF DEVELOPMENT
