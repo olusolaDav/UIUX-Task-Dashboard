@@ -5,8 +5,10 @@
 The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=). 
 
 ![Figma Mockup](https://i.ibb.co/6bDps7J/Dashboard-1.png)
+*screenshot of the Figma Mockup*
 
 ![Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
+*screenshot of the expected breakpoints*
 
 The dashboard is designed to display data in a clear and concise manner, allowing users to easily monitor and analyze task progress, and add new tasks to the list. The progress of the task list is divided into three categories: To-do, In Progress, and Completed.
 
@@ -42,7 +44,7 @@ The application relies on a variety of external resources, including dependencie
 
 ## HOW TO RUN THE PROJECT LOCALLY
 * Clone this repo: 
-git clone https://github.com/olusolaDav/UIUX-Task-Dashboard
+git clone https://github.com/olusolaDav/UIUX-Task-Dashboard.git
 
 This project was created using vite (React.js)
 
@@ -136,7 +138,7 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 └── yarn.lock
 ```
 
-#### In the root directory we have:
+### In the root directory we have:
 
 -node_modules (.gitignore)
 - public directory
@@ -149,12 +151,12 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 - vite.config.js file
 - yarn log file
 
-#### In the 'public' directory, we have:
+### In the 'public' directory, we have:
 
 - VectoractivitiesIcon.svg (for the page title logo)
 
 
-#### In the 'src' directory we have :
+### In the 'src' directory we have :
 
 - assests directory : Inside this directory we have all images and icons used  through out the project it as two subfolders of images and icons, as the directory name implies they both store different file types of images(png, jpeg etc) and icons(svg, ico, etc)
 
@@ -170,11 +172,13 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 - resources : This directory contains 3 'jsx' files and 2 'js' files that export static data used accross the web application
 - routes : This directory contains 3 'jsx' files that render the routes/pages components (both the homepage (dashboard) and the demo pages for the all navigation in the sidebar).
 
-#### In the 'src' directory we have :
+### root & config files  , postcss.config.json etc) :
 - app.jsx : This render the parent route component
 - index.css : contains the tailwind style config and other styles
 - main.jsx : works as the entry point of the application. It uses ReactDOM.render to render App to the root 'id' in the index.html
 - index.html: the only html file in the project directory, it contain a 'root' div element in the body that is rendered to the DOM.  
+- package.json: This is the heart of any Node project. It records important metadata about a project which is required before publishing to NPM, and also defines functional attributes of a project that npm uses to install dependencies, run scripts, and identify the entry point to our package.
+- tailwind.config.json: To define any customizations of tailwindcss use in the project
 
 
 ## PROJECT OUTCOME (SCREENSHOT OF RENDERED SCREENS)
@@ -189,27 +193,52 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 -----------------------------------------
 > Take a look at the screenshot of features added.
 
-* Responsiveness for all screens (mobile, table and Desktop(1280px, 1440px & 1920px))
+### Responsiveness for all screens (mobile, table and Desktop(1280px, 1440px & 1920px))
 ![Mobile view iPhone 12pro](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
+*The Mobile view iPhone 12pro screenshot*
+
 ![Tablet view ipad Air](https://i.ibb.co/zHxdbWs/ipad-Air-screen.png)
-![Mid-screen 760px](https://ibb.co/Gp8KmLH)
+*Tablet view ipad Air screenshot*
+
+![Mid-screen 760px](https://i.ibb.co/2hCDJQZ/md-760-size.png)
+*Mid-screen 760px screenshot*
 
 
-* Collapsible sidebar component (The sidebar component will collapse from Mid-screen 1080px)
+### Collapsible sidebar component (The sidebar component will collapse from Mid-screen 1080px)
 The sidebar will be visible (expanded when user click on the 'burger-menu' button and will collapse when user click on the overlay component)
 ![Collapsed sidebar on 1000px screen](https://i.ibb.co/S3KMMZC/1000-width-collapsesidebar.png)
-![Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
-![Collapsed Sidebar on iPhone 12pro screen](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
-![Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
+*Collapsed sidebar on 1000px screen*
 
-* Routes for the all the navigations on the sidebar and created a dynamic demo page for each of the routes.
+![Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
+*Expanded sidebar on 1000px screen*
+
+![Collapsed Sidebar on iPhone 12pro screen](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
+*Collapsed Sidebar on iPhone 12pro screen*
+
+![Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
+*Expanded Sidebar on iPhone 12pro screen*
+
+### Routes for the all the navigations on the sidebar and created a dynamic demo page for each of the routes.
 ![Home page "dashboard routes"](https://i.ibb.co/XDFC6Jf/homepage.png)
+*Home page "dashboard routes"*
+
 ![Setting routes 'Demo page'](https://i.ibb.co/3BdQDmv/settings.png)
+*Setting routes 'Demo page'*
+
 ![Users routes 'Demo page'](https://i.ibb.co/rx782Jw/userNew.png)
+*Users routes 'Demo page'*
+
 ![Activities routes 'Demo page'](https://i.ibb.co/FYPrwYV/activities.png)
+*Activities routes 'Demo page'*
+
 ![Profille routes 'Demo page'](https://i.ibb.co/Zdb6kTg/profile.png)
+*Profille routes 'Demo page'*
+
 ![Logout routes 'Demo page'](https://i.ibb.co/VHRCSQj/log-out.png)
+*Logout routes 'Demo page'*
+
 ![ADD PROJECT routes 'Demo page'](https://i.ibb.co/Js5hnv6/add-project.png)
+*ADD PROJECT routes 'Demo page'*
 
 
 
