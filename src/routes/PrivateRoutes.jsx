@@ -1,12 +1,15 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, lazy } from 'react';
 import {  Routes, Route} from 'react-router-dom';
 import ROUTES from '../resources/routes';
 import LoadingComponent from '../components/loading/index';
-import Dashboard from '../components/dashboard/index'
-import { DemoPage } from '../components/demo/DemoPage';
+//import Dashboard from '../components/dashboard/index'
+//import { DemoPage } from '../components/demo/DemoPage';
 
+const Dashboard = lazy(() => import("../components/dashboard/index"));
+const  DemoPage  = lazy(() => import("../components/demo/DemoPage"));
 
-
+console.log(typeof(DemoPage))
+console.log(typeof Dashboard);
 
 function PrivateRoutes() {
     return (
