@@ -4,9 +4,9 @@
 ## PROJECT DESCRIPTION
 The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=). 
 
-[Figma Mockup](https://i.ibb.co/6bDps7J/Dashboard-1.png)
+![Figma Mockup](https://i.ibb.co/6bDps7J/Dashboard-1.png)
 
-[Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
+![Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
 
 The dashboard is designed to display data in a clear and concise manner, allowing users to easily monitor and analyze task progress, and add new tasks to the list. The progress of the task list is divided into three categories: To-do, In Progress, and Completed.
 
@@ -180,9 +180,9 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 ## PROJECT OUTCOME (SCREENSHOT OF RENDERED SCREENS)
 -----------------------------------------
 > Take a look at output screenshot.
-[1280px Breakpoint](https://i.ibb.co/Y7kygjS/1280-size.png)
-[1440px Breakpoint](https://i.ibb.co/Mn87LX5/1440-size.png)
-[1920px Breakpoint](https://i.ibb.co/TwzrTkc/1920.png)
+![1280px Breakpoint](https://i.ibb.co/Y7kygjS/1280-size.png)
+![1440px Breakpoint](https://i.ibb.co/Mn87LX5/1440-size.png)
+![1920px Breakpoint](https://i.ibb.co/TwzrTkc/1920.png)
 
 
 ## FEATURES ADDED
@@ -190,26 +190,26 @@ yarn run dev (if you installing with npm) || npm run dev (if you install with np
 > Take a look at the screenshot of features added.
 
 * Responsiveness for all screens (mobile, table and Desktop(1280px, 1440px & 1920px))
-[Mobile view iPhone 12pro](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
-[Tablet view ipad Air](https://i.ibb.co/zHxdbWs/ipad-Air-screen.png)
-[Mid-screen 760px](https://ibb.co/Gp8KmLH)
+![Mobile view iPhone 12pro](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
+![Tablet view ipad Air](https://i.ibb.co/zHxdbWs/ipad-Air-screen.png)
+![Mid-screen 760px](https://ibb.co/Gp8KmLH)
 
 
 * Collapsible sidebar component (The sidebar component will collapse from Mid-screen 1080px)
 The sidebar will be visible (expanded when user click on the 'burger-menu' button and will collapse when user click on the overlay component)
-[Collapsed sidebar on 1000px screen](https://i.ibb.co/S3KMMZC/1000-width-collapsesidebar.png)
-[Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
-[Collapsed Sidebar on iPhone 12pro screen](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
-[Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
+![Collapsed sidebar on 1000px screen](https://i.ibb.co/S3KMMZC/1000-width-collapsesidebar.png)
+![Expanded sidebar on 1000px screen](https://i.ibb.co/qrw6SVt/100width-expanded-sidebar.png)
+![Collapsed Sidebar on iPhone 12pro screen](https://i.ibb.co/zXNHNZZ/mobile-iphone12.png)
+![Expanded Sidebar on iPhone 12pro screen](https://i.ibb.co/9sySnyg/mobile-button.png)
 
 * Routes for the all the navigations on the sidebar and created a dynamic demo page for each of the routes.
-[Home page "dashboard routes"](https://i.ibb.co/XDFC6Jf/homepage.png)
-[Setting routes 'Demo page'](https://i.ibb.co/3BdQDmv/settings.png)
-[Users routes 'Demo page'](https://i.ibb.co/rx782Jw/userNew.png)
-[Activities routes 'Demo page'](https://i.ibb.co/FYPrwYV/activities.png)
-[Profille routes 'Demo page'](https://i.ibb.co/Zdb6kTg/profile.png)
-[Logout routes 'Demo page'](https://i.ibb.co/VHRCSQj/log-out.png)
-[ADD PROJECT routes 'Demo page'](https://i.ibb.co/Js5hnv6/add-project.png)
+![Home page "dashboard routes"](https://i.ibb.co/XDFC6Jf/homepage.png)
+![Setting routes 'Demo page'](https://i.ibb.co/3BdQDmv/settings.png)
+![Users routes 'Demo page'](https://i.ibb.co/rx782Jw/userNew.png)
+![Activities routes 'Demo page'](https://i.ibb.co/FYPrwYV/activities.png)
+![Profille routes 'Demo page'](https://i.ibb.co/Zdb6kTg/profile.png)
+![Logout routes 'Demo page'](https://i.ibb.co/VHRCSQj/log-out.png)
+![ADD PROJECT routes 'Demo page'](https://i.ibb.co/Js5hnv6/add-project.png)
 
 
 
