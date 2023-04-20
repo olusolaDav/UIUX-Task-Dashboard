@@ -1,6 +1,6 @@
 import React from 'react'
 import TaskSection from './TaskSection';
-import { TASKS } from './TaskList';
+import { TASKS } from './taskList';
 
 const Task = () => {
     const taskItem = TASKS.map(tsk =>(
