@@ -2,9 +2,9 @@
 
 
 ## PROJECT DESCRIPTION
-The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=). 
+The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=) 
 
-![Figma Mockup](https://i.ibb.co/GCNj7hk/mockup.png)
+![Figma Mockup](https://i.ibb.co/P5B7CpK/Screenshot-2023-04-20-170024.png)
 *screenshot of the Figma Mockup*
 
 ![Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
@@ -256,7 +256,7 @@ The sidebar will be visible (expanded when user click on the 'burger-menu' butto
 * As this was my first time using Tailwind CSS, I had to take my time to read through the documentation and watch some videos to become familiar with the framework. This slowed down my development stage, as I had not yet mastered some of the classes.
 * I also encountered a serious challenge while creating the responsive sidebar, and had to read through the documentation on libraries that could address the issue.
 
-## WHAT I LEARN'T IN THE COURSE OF THE DEVELOPMENT
+## WHAT I LEARNT IN THE COURSE OF THE DEVELOPMENT
 
 * I learned how to use several new tools, including Tailwind CSS, React-JSS, React-Burger-Menu, Simple-Flexbox, and React-Collapsible-Content.
 * The project helped me improve the way I structure code, write reusable code, and maintain clean code practices.
