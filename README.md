@@ -1,11 +1,10 @@
 # Nupat Team Phase 2 Intership Task (UIUX Task Dashboard)
 
-
 ## PROJECT DESCRIPTION
 The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype below:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=) 
 
 ![Figma Mockup](https://i.ibb.co/P5B7CpK/Screenshot-2023-04-20-170024.png)
-*screenshot of the `Figma Mocku`p*
+*screenshot of the `Figma Mockup`*
 
 ![Breakpoints](https://i.ibb.co/WgkSP7M/Dashboard-breakpoint.png)
 *screenshot of the expected breakpoints*
@@ -13,10 +12,9 @@ The project involves creating a pixel-perfect UIUX Task Dashboard based on a Fig
 The dashboard is designed to display data in a clear and concise manner, allowing users to easily monitor and analyze task progress, and add new tasks to the list. The progress of the task list is divided into three categories: To-do, In Progress, and Completed.
 
 
-- Devloper: Akinbode Olusola David
+- Developer: Akinbode Olusola David
 - Start date: 15th of April, 2023
-- Finish-date: 20th of April, 2023
-
+- Finish date: 20th of April, 2023
 ## PROJECT LINK
 https://uiuxtaskdashboard.netlify.app/
 
@@ -52,7 +50,7 @@ This project was created using vite (React.js)
 yarn install (if you are using yarn) ||  npm run install (if you are using yarn)
 
 * Run the development server:
-yarn run dev (if you installing with yarn) || npm run dev (if you install with npm)
+yarn run dev (if you installed with yarn) || npm run dev (if you installed with npm)
 
 
 ## PROJECT STRUCTURE (DIRECTORY TREE)
@@ -158,17 +156,17 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
 ### base folder: /src:
 
 -   **/assets**:
-    /icons: SVGs icons
-    other assets (i.e. images)
+    /icons: SVGs icons, jsx files holding SVGs icons
+    /images: png files
 
 -   **/components**: 
     This is where all the components in the application is stored. It has Six (6) subfolders, which are: 
-    1. collapsible: this contain a 'jsx' file that rendered the logic for the collapsable sidebar
-    2. dashboard: this contain 3 subfolders and 1 index.jsx file that exports (renders) the HOME PAGE. 
-    3. demo: this contain a `jsx` file that dynamically renders demo pages of the sidebar's navigations to the DOM.
-    4. loading: This contain 2 'jsx' files that renders the loading gif to the DOM.
-    5. shared: this contains 6 subfolders that holds all components that are used across the whole web application.
-    6. sidebar: this directory contains 6 'jsx' files that renders the sidebar to the DOM.
+    1. `collapsible`: this contain a 'jsx' file that rendered the logic for the collapsable sidebar
+    2. `dashboard`: this contain 3 subfolders and 1 index.jsx file that exports (renders) the HOME PAGE. 
+    3. `demo`: this contain a `jsx` file that dynamically renders demo pages of the sidebar's navigations to the DOM.
+    4. `loading`: This contain 2 'jsx' files that renders the loading gif to the DOM.
+    5. `shared`: this contains 6 subfolders that holds all components that are used across the whole web application.
+    6. `sidebar`: this directory contains 6 'jsx' files that renders the sidebar to the DOM.
 
 -   **/hooks**:
     every hook should is stored in this directory, and the names of the file inside start with the prefix "use":
@@ -186,17 +184,17 @@ yarn run dev (if you installing with yarn) || npm run dev (if you install with n
     public: are all those that do not require the user to be logged into the app, such as Login, Signup, etc.
     private: to access these routes the user must be logged in (this app is set to authenticated user by default)
     Each main section of the application has its own route:
-    -   dashboard (the homepage)
-    -   settings
-    -   activities
-    -   users
-    -   added user
-    -   affiliate
-    -   profile
-    -   logout
+    -   `dashboard` (the homepage)
+    -   `settings`
+    -   `activities`
+    -   `users`
+    -   `added user`
+    -   `affiliate`
+    -   `profile`
+    -   `logout`
   
 
-### root & config files:
+### root & `config` files:
 - `app.jsx` : This renders the parent route (component)
 - `index.css` : contains the tailwind style configuration and customisation
 - `main.jsx` : works as the entry point of the application. It uses ReactDOM.render to render 'App' component to the root 'id' in the index.html
@@ -311,4 +309,4 @@ With the help of lazy loading using `react.lazy` and `React.Suspense` I created 
 
 
 ### NOTE
-This is assessment by `NUPAT TEAM` to test prospective intern in React stack their skill and attention to detail summing up your ability to reproduce a `pixel-perfect` implementation of a design on figma and Also how to structure code.
+This is an assessment by `NUPAT TEAM` to test prospective interns in React stack their skill and attention to detail summing up your ability to reproduce a `pixel-perfect` implementation of a design on figma and Also how to structure code.
