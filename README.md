@@ -1,7 +1,7 @@
 # Nupat Team Phase 2 Intership Task (UIUX Task Dashboard)
 
 ## PROJECT DESCRIPTION
-The project involves creating a pixel-perfect UIUX Task Dashboard based on a Figma prototype below:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=) 
+The project involves creating a pixel-perfect of a `UIUX Task Dashboard` based on a Figma prototype below:  [Figma Design](https://www.figma.com/file/QdARXcFMveMaXZU37ZtzhD/%F0%9F%98%B5-Responsive-dashboard-design-using-Auto-Layout-Community?is-community-duplicate=1&fuid=) 
 
 ![Figma Mockup](https://i.ibb.co/P5B7CpK/Screenshot-2023-04-20-170024.png)
 *screenshot of the `Figma Mockup`*
