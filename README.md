@@ -42,15 +42,15 @@ The application relies on a variety of external resources, including dependencie
 
 ## HOW TO RUN THE PROJECT LOCALLY
 * Clone this repo: 
-git clone https://github.com/olusolaDav/UIUX-Task-Dashboard.git
+`git clone` https://github.com/olusolaDav/UIUX-Task-Dashboard.git
 
 This project was created using vite (React.js)
 
 * Install the dependencies:
-yarn install (if you are using yarn) ||  npm run install (if you are using yarn)
+`yarn install` (if you are using yarn) ||  `npm run install` (if you are using npm)
 
 * Run the development server:
-yarn run dev (if you installed with yarn) || npm run dev (if you installed with npm)
+`yarn run dev` (if you installed with yarn) || `npm run dev` (if you installed with npm)
 
 
 ## PROJECT STRUCTURE (DIRECTORY TREE)
@@ -285,7 +285,7 @@ In this state we will show the `Sidebar` and an `outsideLayer` that will fill th
 *ADD PROJECT routes 'Demo page'*
 
 
-### 3. Created loading spinner animation component
+### 4. Created loading spinner animation component
 With the help of lazy loading using `react.lazy` and `React.Suspense` I created animated loading spinner that will be render when the page is loading. The component is imported using the dynamic import() syntax and assigned to the loader property in the options object,  (to view the code base [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/routes/PrivateRoutes.jsx)). The logic and styling of the loading component is written in the `LoadingComponent.jsx`, while `/src/components/loading/index.jsx` export the component. (to view the code base [click here](https://github.com/olusolaDav/UIUX-Task-Dashboard/blob/main/src/components/loading/LoadingComponent.jsx)).
 
 ![Loading component'](https://i.ibb.co/R4PFtH9/Screenshot-165.png)
